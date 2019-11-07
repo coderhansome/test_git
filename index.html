@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cart</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding:0;
+            border: 0;
+            text-decoration: none;
+            box-sizing: border-box;
+            list-style: none;
+        }
+
+        body{
+            min-height: 100vh;
+            background-image: linear-gradient(120deg, #16a085, #1abc9c);
+            position: relative;
+        }
+
+        .container{
+            width: 300px;
+            height: 350px;
+            background-color: #ebebeb;
+            text-align: center;
+            margin-bottom: 20px;
+            position: absolute;
+        }
+
+        .container:nth-child(1){
+            left: 80px;
+            top: 30%;
+        }
+
+        .container:nth-child(2){
+            left: 510px;
+            top: 30%;
+        }
+
+        .container:nth-child(3){
+            left: 940px;
+            top: 30%;
+        }
+
+        .btn-cart{
+            height: 30px;
+            font-size: 15px;
+            width: 230px;
+            box-shadow: 0px 5px 10px 0px black;
+            position: absolute;
+            left: 10%;
+            bottom: -15px; 
+            outline: none;
+            text-transform: uppercase;
+            color: #fff;
+        }
+
+        #btn-package{
+            background: linear-gradient(120deg, #2980b9, #8e44ad);
+        }
+
+        #btn-id-package2{
+             background: linear-gradient(120deg, #2c3e50, #95a5a6);
+        }
+
+        #btn-id-package3{
+            background: linear-gradient(120deg, #c0392b, #e67e22);
+        }
+
+        #price{
+            background: #3498db;
+        }
+
+        #price-id2{
+            background: #34495e;
+        }
+
+        #price-id3{
+            background: #e74c3c;        
+        }
+
+        .prices-oder{
+            padding: 35px 0px;
+            color: #fff;
+            position: relative;
+        }
+
+        .list-oder{
+            height: 100%;
+            margin-top: 45px;
+        }
+
+        .list-oder ul li{
+            display: block;
+            margin: 20px;
+            border: none;
+            text-transform: uppercase;
+            font-size: 15px;
+            letter-spacing: 2px;
+        }
+
+        .class-btn-oder{
+            height: 30px;
+            font-size: 15px;
+            width: 230px;
+            background: transparent;
+            border-radius: 3px;
+        }
+
+        #btn-oder{
+            border: 1px solid #2980b9;
+            color: #2980b9;
+        }
+
+        #btn-oder2{
+            border: 1px solid #2c3e50;
+            color: #2c3e50;
+        }
+
+        #btn-oder3{
+            border: 1px solid #c0392b;
+            color: #c0392b;
+        }
+
+        #btn-oder:hover{
+            height: 30px;
+            font-size: 15px;
+            width: 230px;
+            background: linear-gradient(120deg, #3498db, #2980b9);
+            color: #fff;
+            border-radius: 15px;
+        }
+
+        #btn-oder2:hover{
+            height: 30px;
+            font-size: 15px;
+            width: 230px;
+            background: linear-gradient(120deg, #2c3e50, #34495e);
+            color: #fff;
+            border-radius: 15px;            
+        }
+
+        #btn-oder3:hover{
+            height: 30px;
+            font-size: 15px;
+            width: 230px;
+            background: linear-gradient(120deg, #c0392b, #e74c3c);
+            color: #fff;
+            border-radius: 15px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="prices-oder" id="price">
+            <h1>$19</h1>
+            <button class="btn-cart" id="btn-package">Basic</button>
+        </div>
+        <div class="list-oder">
+            <ul>
+                <li><b>200GB</b>STORAGE</li>
+                <li><b>4</b>EMAIL ADDRESS</li>
+                <li><b>1</b>DOMAIN NAME</li>
+                <li><b>24H</b>SUPPORT</li>
+            </ul>
+            <button class="class-btn-oder" id="btn-oder">order now</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="prices-oder" id="price-id2">
+            <h1>$39</h1>
+            <button class="btn-cart" id="btn-id-package2">Pro</button>
+        </div>
+        <div class= "list-oder">
+            <ul>
+                <li><b>200GB </b>STORAGE</li>
+                <li><b>4</b>EMAIL ADDRESS</li>
+                <li><b>1</b>DOMAIN NAME</li>
+                <li><b>24H</b>SUPPORT</li>
+            </ul>
+            <button class="class-btn-oder" id="btn-oder2">order now</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="prices-oder" id="price-id3">
+            <h1>$79</h1>
+            <button class="btn-cart" id="btn-id-package3">Premiem</button>
+        </div>
+        <div class="list-oder">
+            <ul>
+                <li><b>200GB</b>STORAGE</li>
+                <li><b>4</b>EMAIL ADDRESS</li>
+                <li><b>1</b>DOMAIN NAME</li>
+                <li><b>24H</b>SUPPORT</li>
+            </ul>
+            <button class="class-btn-oder" id="btn-oder3">order now</button>
+        </div>
+    </div>
+</body>
+</html>
